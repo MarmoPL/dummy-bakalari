@@ -31,6 +31,7 @@ func main() {
 	http.HandleFunc("/api/3/webmodule", handleWebmodule)
 	http.HandleFunc("/api/3/logintoken", handleLoginToken)
 	http.HandleFunc("/api/3/login/donate", handleCustomDonate)
+	http.HandleFunc("/api/3/marks/count-new", handleMarksCountNew)
 
 	// Start Bakaláři version update goroutine
 	bakalariVersionCheckLock.Lock()

@@ -235,6 +235,11 @@ func handleWebmodule(w http.ResponseWriter, r *http.Request) {
 	writeResponse(w, content, http.StatusOK)
 }
 
+func handleMarksCountNew(w http.ResponseWriter, r *http.Request) {
+	var content = 1
+	writeResponse(w, content, http.StatusOK)
+}
+
 // Handle automatic requests for the login token.
 // This token is used by the client to generate a web login URL like this: `/api/3/login/<login-token>`.
 // Right now this just responds with `donate`.
